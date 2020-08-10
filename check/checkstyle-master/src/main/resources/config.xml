@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<!DOCTYPE module PUBLIC
+          "-//Checkstyle//DTD Checkstyle Configuration 1.3//EN"
+          "https://checkstyle.org/dtds/configuration_1_3.dtd">  
+                 
+<module name = "Checker">    		
+	<module name = "DbUpdate">
+		<property name="ignorePattern" 
+		value="^package.*|^import.*|a href|href|http://|https://|ftp://|\s*(@|\*|\/)+.*"/>
+	</module> 
+	<module name = "Codediscomment"/>
+	<module name = "LogCharacter">
+		<property name="ignorePattern" value="^package.*|^import.*|\s(@|\*|\/)+.*"/>
+	</module>  
+	<module  name= "TreeWalker">
+		<module name ="MethodLimit" >
+			<property name="max" value="5"/>
+		</module>
+	</module>
+</module>      
